@@ -1,15 +1,23 @@
-# CEN Temple Explorer
+# CEN Temple Explorer v2.1
 
-Integrated PWA for Tabernacle, Solomon Temple, Zerubbabel Temple, and Herod Temple.
+Integrated PWA for Tabernacle and Temple exploration.
 
-## Current checkpoint
+## Included
 
-- Integrated PWA scaffold established
-- Common Explorer Engine separated under `/assets/engine`
-- Zerubbabel Temple Explorer migrated into `/assets/zerubbabel`
-- Zerubbabel scene data moved to `/data/zerubbabel.js`
-- Tabernacle/Solomon/Herod folders prepared
+- Common Explorer Engine
+- Zerubbabel Temple Explorer integrated
+- Tabernacle Explorer Remastered added
+- Gesture UX: tap menu, drag, pinch zoom, swipe scene navigation
+- Android Back support
+- Auto Explore: 2.5 seconds, stops immediately on user interaction
 
-## Next step
+## Structure
 
-Build Tabernacle Explorer Remastered using the same engine and UX.
+- `/assets/engine` common engine
+- `/assets/tabernacle` Tabernacle scenes and thumbnails
+- `/assets/zerubbabel` Zerubbabel scenes and thumbnails
+- `/data/*.js` project scene data
+
+## Note
+
+Tabernacle scenes are included as first remastered build assets and can be replaced one-by-one with final high-resolution production images while keeping the same file names.
