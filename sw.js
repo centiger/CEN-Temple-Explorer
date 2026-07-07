@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cen-temple-explorer-v2-herod-fixed-001';
+const CACHE_NAME = 'cen-temple-explorer-v2-herod-fixed-002';
 const CORE = [
   './','./index.html','./manifest.webmanifest',
   './assets/common/ui/app.css',
