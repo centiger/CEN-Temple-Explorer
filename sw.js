@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cen-temple-explorer-v2-herod-001';
+const CACHE_NAME = 'cen-temple-explorer-v2-herod-fixed-001';
 const CORE = [
   './','./index.html','./manifest.webmanifest',
   './assets/common/ui/app.css',
@@ -8,7 +8,8 @@ const CORE = [
   './assets/tabernacle/scenes/01-drone.jpg','./assets/tabernacle/scenes/02-overview.jpg','./assets/tabernacle/scenes/03-courtyard.jpg','./assets/tabernacle/scenes/04-altar.jpg','./assets/tabernacle/scenes/05-laver.jpg','./assets/tabernacle/scenes/06-entrance.jpg','./assets/tabernacle/scenes/07-holy-place.jpg','./assets/tabernacle/scenes/08-ark.jpg',
 
   './assets/solomon/scenes/01-drone.jpg','./assets/solomon/scenes/02-temple-front.jpg','./assets/solomon/scenes/03-altar.jpg','./assets/solomon/scenes/04-bronze-sea.jpg','./assets/solomon/scenes/05-entrance.jpg','./assets/solomon/scenes/06-holy-place.jpg','./assets/solomon/scenes/07-holy-of-holies.jpg',
-  './assets/zerubbabel/scenes/01-drone.jpg','./assets/zerubbabel/scenes/02-temple-front.jpg','./assets/zerubbabel/scenes/03-outer-court.jpg','./assets/zerubbabel/scenes/04-altar.jpg','./assets/zerubbabel/scenes/05-laver.jpg','./assets/zerubbabel/scenes/06-entrance.jpg','./assets/zerubbabel/scenes/07-holy-place.jpg','./assets/zerubbabel/scenes/08-holy-of-holies.jpg'
+  './assets/zerubbabel/scenes/01-drone.jpg','./assets/zerubbabel/scenes/02-temple-front.jpg','./assets/zerubbabel/scenes/03-outer-court.jpg','./assets/zerubbabel/scenes/04-altar.jpg','./assets/zerubbabel/scenes/05-laver.jpg','./assets/zerubbabel/scenes/06-entrance.jpg','./assets/zerubbabel/scenes/07-holy-place.jpg','./assets/zerubbabel/scenes/08-holy-of-holies.jpg',
+  './assets/herod/scenes/01-temple-mount-drone.jpg','./assets/herod/scenes/02-royal-stoa.jpg','./assets/herod/scenes/03-court-gentiles.jpg','./assets/herod/scenes/04-nicanor-gate.jpg','./assets/herod/scenes/05-womens-court.jpg','./assets/herod/scenes/06-priest-court-altar.jpg','./assets/herod/scenes/07-temple-entrance.jpg','./assets/herod/scenes/08-holy-place.jpg','./assets/herod/scenes/09-empty-holy-of-holies.jpg','./assets/herod/scenes/10-sunset-ending.jpg'
 ];
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
