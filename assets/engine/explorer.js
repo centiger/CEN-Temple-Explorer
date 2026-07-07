@@ -14,7 +14,7 @@
     window.CEN_STORY.getProjects().forEach(p=>{
       const b=document.createElement('button');
       b.className='project-card'+(!p.enabled?' disabled':'');
-      b.innerHTML=`<small>${p.subtitle||''}</small><strong>${p.title}</strong><small>${p.enabled?'탐험 시작':'준비 중'}</small>`;
+      b.innerHTML=`<small>${p.subtitle||''}</small><strong>${p.title}</strong><small>${p.enabled?'▶ EXPLORE':'준비 중'}</small>`;
       b.onclick=()=>p.enabled&&openProject(p.id);
       els.projectGrid.appendChild(b);
     });
