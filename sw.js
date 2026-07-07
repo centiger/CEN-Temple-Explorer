@@ -1,4 +1,5 @@
-const CACHE_NAME = 'cen-temple-explorer-v2-1-20260707b';
+// HD Herod cache refresh 1783460002
+const CACHE_NAME = 'cen-temple-explorer-hd-v2-herod-fixed-002';
 const CORE = [
   './','./index.html','./manifest.webmanifest',
   './assets/common/ui/app.css',
