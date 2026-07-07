@@ -1,15 +1,26 @@
-# CEN Temple Explorer v2.2
+# CEN Temple Explorer v2.0 — Herod Remastered 포함
 
-통합 PWA 구조에 성막 Explorer 8 Scene 이미지를 반영한 작업본입니다.
+성막, 솔로몬 성전, 스룹바벨 성전, 헤롯 성전을 하나의 Explorer Engine으로 탐험하는 PWA입니다.
 
-## 반영 내용
-- 성막 8 Scene 실제 이미지 적용
-- 배치 기준: 입구 → 번제단 → 물두멍 → 성막 입구
-- 성소 내부: 금촛대, 진설병상, 분향단
-- 지성소: 언약궤, 속죄소, 얼굴 있는 두 그룹, 날개 맞닿음
-- 스룹바벨 Explorer 유지
-- 공통 Explorer Engine 유지
-- 자동탐험 2.5초 유지
+## 이번 반영
+- 헤롯 성전 Explorer 활성화
+- `assets/herod/scenes/` 13개 장면 추가
+- `assets/herod/thumbs/` 썸네일 추가
+- `data/herod.js` 탐험 순서 구성
+- 공통 Explorer Engine은 수정하지 않음
+- Service Worker 캐시명 갱신
 
-## 참고
-검토용 몽타주/인포그래픽 이미지는 앱에 넣지 않았습니다. 실제 Explorer에는 텍스트 없는 개별 Scene 이미지만 사용합니다.
+## 헤롯 성전 탐험 순서
+1. 성전산 드론뷰
+2. 왕의 행각
+3. 이방인의 뜰
+4. 소렉 경계
+5. 니카노르 문
+6. 여인의 뜰
+7. 이스라엘의 뜰
+8. 제사장의 뜰과 번제단
+9. 성전 본관 접근
+10. 성전 입구
+11. 성소
+12. 빈 지성소
+13. 성전산 석양
