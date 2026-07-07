@@ -1,23 +1,15 @@
-# CEN Temple Explorer v2.1
+# CEN Temple Explorer v2.2
 
-Integrated PWA for Tabernacle and Temple exploration.
+통합 PWA 구조에 성막 Explorer 8 Scene 이미지를 반영한 작업본입니다.
 
-## Included
+## 반영 내용
+- 성막 8 Scene 실제 이미지 적용
+- 배치 기준: 입구 → 번제단 → 물두멍 → 성막 입구
+- 성소 내부: 금촛대, 진설병상, 분향단
+- 지성소: 언약궤, 속죄소, 얼굴 있는 두 그룹, 날개 맞닿음
+- 스룹바벨 Explorer 유지
+- 공통 Explorer Engine 유지
+- 자동탐험 2.5초 유지
 
-- Common Explorer Engine
-- Zerubbabel Temple Explorer integrated
-- Tabernacle Explorer Remastered added
-- Gesture UX: tap menu, drag, pinch zoom, swipe scene navigation
-- Android Back support
-- Auto Explore: 2.5 seconds, stops immediately on user interaction
-
-## Structure
-
-- `/assets/engine` common engine
-- `/assets/tabernacle` Tabernacle scenes and thumbnails
-- `/assets/zerubbabel` Zerubbabel scenes and thumbnails
-- `/data/*.js` project scene data
-
-## Note
-
-Tabernacle scenes are included as first remastered build assets and can be replaced one-by-one with final high-resolution production images while keeping the same file names.
+## 참고
+검토용 몽타주/인포그래픽 이미지는 앱에 넣지 않았습니다. 실제 Explorer에는 텍스트 없는 개별 Scene 이미지만 사용합니다.
